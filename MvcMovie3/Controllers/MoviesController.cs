@@ -28,6 +28,12 @@ namespace MvcMovie3.Controllers
             return View(movies); 
         }
 
+        [HttpPost]
+        public string Index(FormCollection fc, string searchString)
+        {
+            return "<h3> From [HttpPost]Index: " + searchString + "</h3>";
+        }
+
         // GET: /Movies/Details/5
         public ActionResult Details(int? id)
         {
