@@ -15,6 +15,7 @@ namespace MvcMovie3.Migrations
                         Title = c.String(),
                         ReleaseDate = c.DateTime(nullable: false),
                         Genre = c.String(),
+                        Rating = "PG",
                         Price = c.Decimal(nullable: false, precision: 18, scale: 2),
                     })
                 .PrimaryKey(t => t.ID);
