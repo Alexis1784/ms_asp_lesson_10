@@ -24,7 +24,7 @@ namespace MvcMovie3.Controllers
                            select d.Genre;
 
             GenreLst.AddRange(GenreQry.Distinct());
-            ViewBag.movieGenre = new SelectList(GenreLst);
+            ViewBag.movieGenre = new SelectList(GenreLst, "horror");
 
             var movies = from m in db.Movies
                          select m;
